@@ -1,6 +1,7 @@
 ﻿body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
+  background-color: #14131a
 }
 
 .container {
@@ -97,3 +98,102 @@
   background: url('../img/blood.png') no-repeat top right,
     #14131a url('../img/background.jpg') no-repeat center center / 100%;
 }
+
+.primery-bg{
+  background: url('../img/background.jpg') no-repeat center center / 100%;
+}
+
+.content {
+  display: flex;
+}
+.col {
+  flex-basis: 50%;
+}
+
+.content-titile {
+  font-size: 36px;
+  line-height: 42px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+
+.content-text {
+  max-width: 423px;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+}
+
+.content-subtitile {
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.list-item {
+  line-height: 1.5;
+}
+
+.content .list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.column-2 {
+  -webkit-column-count: 2;
+  column-count: 2;
+  column-gap: 20px;
+  max-width: 350px;
+  margin-bottom: 30px;
+}
+
+.content .trailer{
+  width: 356px;
+  height: 205px;
+  background: url(../img/trailer-cover.jpg) no-repeat center /contain;
+  border-radius: 5px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.trailer .play{
+  width:45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+}
+
+.trailer .play-icon{
+  transform: translate(0px, 2px);
+  cursor: pointer;
+}
+
+.poster-wrapper{
+  display: flex;
+  align-items: start;
+}
+
+.poster{
+  margin-right: 30px;
+}
+
+.poster-wrapper .content-subtitle{
+  margin-bottom: 5px;
+}
+
+.poster-wrapper .content-text{
+  margin-bottom: 20px;
+}
+
+.poster-wrapper{
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+
+
