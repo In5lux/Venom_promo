@@ -1,0 +1,74 @@
+Index: about.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"ru\">\r\n\r\n<head>\r\n  <meta charset=\"utf-8\">\r\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\r\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"css/normalize.css\">\r\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"css/styles.css\">\r\n  <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\" rel=\"stylesheet\">\r\n  <title>Document</title>\r\n  \r\n\r\n</head>\r\n\r\n<body class=\"primery-bg\">\r\n  <div class=\"container\">\r\n    <header class=\"header\">\r\n      <a href=\"index.html\" class=\"logo-link\">\r\n        <img src=\"img/logo.png\" height=\"71\" width=\"46\" alt=\"logo: venom 2\" class=\"logo-image\"></a>\r\n      <nav class=\"nav\">\r\n        <ul class=\"nav-menu\">\r\n          <li class=\"nav-menu-item\">\r\n            <a href=\"about.html\" class=\"nav-menu-link\">о фильме</a>\r\n          </li>\r\n          <li class=\"nav-menu-item\">\r\n            <a href=\"trailer.html\" class=\"nav-menu-link\">трейлер</a>\r\n          </li>\r\n          <li class=\"nav-menu-item\">\r\n            <a href=\"actors.html\" class=\"nav-menu-link\">актеры</a>\r\n          </li>\r\n          <li class=\"nav-menu-item\">\r\n            <a href=\"premier.html\" class=\"nav-menu-link\">премьера</a>\r\n          </li>\r\n        </ul>\r\n      </nav>\r\n    </header>\r\n    <div class=\"content\">\r\n      <div class=\"col\">\r\n        <h1 class=\"content-titile\">О фильме</h1>\r\n        <p class=\"content-text\">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>\r\n        <h2 class=\"content-subtitile\">В главных ролях</h2>\r\n        <ul class=\"list column-2\">\r\n          <li class=\"list-item\">Том Харди</li>\r\n          <li class=\"list-item\">Мишель Уильямс</li>\r\n          <li class=\"list-item\">Вуди Харрельсон</li>\r\n          <li class=\"list-item\">Наоми Харрис</li>\r\n          <li class=\"list-item\">Стивен Грэм</li>\r\n          <li class=\"list-item\">Рейд Скотт</li>\r\n          <li class=\"list-item\">Эд Кейр</li>\r\n          <li class=\"list-item\">Шон Делани</li>\r\n          <li class=\"list-item\">Уилльям Барбо</li>\r\n          <li class=\"list-item\">Пегги Лу</li>\r\n        </ul>\r\n        <div class=\"trailer\">\r\n          <button class=\"play\">\r\n            <img src=\"img/play.svg\" alt=\"icon: play\" class=\"play-icon\">\r\n          </button>\r\n        </div>\r\n      </div>\r\n       <div class=\"col\">\r\n         <div class=\"poster-wrapper\">\r\n          <div ><img src=\"img/poster.jpg\" alt=\"photo: poster venom 2\" class=\"poster\" /></div>\r\n\r\n          <div class=\"creators\">\r\n            <h2 class=\"content-subtitile\">Режиссер</h2>\r\n            <ul class=\"list\">\r\n              <li class=\"list-item\">Энди Серкис</li>\r\n            </ul>\r\n            <h2 class=\"content-subtitile\">Сценарий</h2>\r\n            <ul class=\"list\">\r\n              <li class=\"list-item\">Келли Марсел</li>\r\n              <li class=\"list-item\">Том Харди</li>\r\n            </ul class=\"list\">\r\n            <h2 class=\"content-subtitile\">Продюсеры</h2>\r\n            <ul class=\"list\">\r\n              <li class=\"list-item\">Ави Арад</li>\r\n              <li class=\"list-item\">Том Харди</li>\r\n              <li class=\"list-item\">Келли Марсел</li>\r\n            </ul>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  \r\n</body>\r\n\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-16LE
+===================================================================
+--- about.html	(revision e971a350d05da97318c868bc65f4b0adc64ea755)
++++ about.html	(date 1623568902000)
+@@ -10,7 +10,8 @@
+   <link rel="stylesheet" type="text/css" href="css/styles.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <title>Document</title>
+-  
++  <script src="js/main.js" defer></script>
++
+ 
+ </head>
+ 
+@@ -20,6 +21,13 @@
+       <a href="index.html" class="logo-link">
+         <img src="img/logo.png" height="71" width="46" alt="logo: venom 2" class="logo-image"></a>
+       <nav class="nav">
++        <button class="menu-button">
++          <span class="menu-button-text">Меню</span>
++          <img src="img/burger-menu.png" class="menu-button-icon" alt="icon: burger menu">
++        </button>
++        <button class="menu-close">
++          <span class="menu-close-text">Закрыть &rarr;</span>
++        </button>
+         <ul class="nav-menu">
+           <li class="nav-menu-item">
+             <a href="about.html" class="nav-menu-link">о фильме</a>
+@@ -39,7 +47,8 @@
+     <div class="content">
+       <div class="col">
+         <h1 class="content-titile">О фильме</h1>
+-        <p class="content-text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
++        <p class="content-text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного
++          суперзлодея из комиксов Marvel.</p>
+         <h2 class="content-subtitile">В главных ролях</h2>
+         <ul class="list column-2">
+           <li class="list-item">Том Харди</li>
+@@ -55,13 +64,15 @@
+         </ul>
+         <div class="trailer">
+           <button class="play">
++            <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0">
+             <img src="img/play.svg" alt="icon: play" class="play-icon">
++            </a>
+           </button>
+         </div>
+       </div>
+-       <div class="col">
+-         <div class="poster-wrapper">
+-          <div ><img src="img/poster.jpg" alt="photo: poster venom 2" class="poster" /></div>
++      <div class="col">
++        <div class="poster-wrapper">
++          <div><img src="img/poster.jpg" alt="photo: poster venom 2" class="poster" /></div>
+ 
+           <div class="creators">
+             <h2 class="content-subtitile">Режиссер</h2>
+@@ -84,7 +95,9 @@
+       </div>
+     </div>
+   </div>
+-  
++<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
++<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
++<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+ </body>
+ 
+ </html>
+\ No newline at end of file
